@@ -3,6 +3,8 @@ import requests
 import json
 from flask import jsonify 
 from flask import Flask,request
+app = Flask(__name__)
+@app.route("/translate",methods=['POST'])
 def index():
     print('hello')
     src_text = request.json['src_text']
