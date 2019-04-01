@@ -1,1 +1,1 @@
-worker: gunicorn QueryANI.py
+worker: Translate.py
